@@ -1,2 +1,0 @@
-TicTac.js
-import React, {}
