@@ -1,0 +1,84 @@
+.dice {
+  background-color: #cc0033;
+  width: 88px;
+  height: 88px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.dice:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 22px;
+  margin-top: -8px;
+  left: 22px;
+  margin-left: -8px;
+  background-color: #fff;
+}
+
+.eyes-1:after {
+  top: 50%;
+  left: 50%;
+}
+
+.eyes-2:after {
+  box-shadow: 44px 44px 0 #fff;
+}
+
+.eyes-3:after {
+  top: 50%;
+  left: 50%;
+  box-shadow:
+    -22px -22px 0 #fff,
+    22px 22px 0 #fff
+  ;
+}
+
+.eyes-4:after {
+  box-shadow:
+    44px 0 0 #fff,
+    0 44px 0 #fff,
+    44px 44px 0 #fff
+  ;
+}
+
+.eyes-5:after {
+  top: 50%;
+  left: 50%;
+  box-shadow:
+    -22px -22px 0 #fff,
+    -22px 22px 0 #fff,
+    22px -22px 0 #fff,
+    22px 22px 0 #fff
+  ;
+}
+
+.eyes-6:after {
+  box-shadow:
+    22px 0 0 #fff,
+    44px 0 0 #fff,
+    0 44px 0 #fff,
+    22px 44px 0 #fff,
+    44px 44px 0 #fff
+  ;
+}
+
+.decision {
+  box-sizing: border-box;
+  padding: 0.5em;
+  font-size: 2em;
+  background-color: #ddd;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  transition: 700ms;
+}
+
+.decision:focus {
+  border: 3px solid #ccc;
+  outline: none;
+  background-color: #fff;
+}
