@@ -14,6 +14,12 @@ function Decision(props) {
   );
 }
 
+function Roller() {
+  return (
+    <button className="roll-it" onClick={() => { console.log('Roll the dice') }}>Roll</button>
+  );
+}
+
 class Decidr extends React.Component {
   constructor () {
     super();
@@ -32,6 +38,7 @@ class Decidr extends React.Component {
     return (
       <div className="Decidr">
         <Decision />
+        <Roller />
         {dice}
       </div>
     );

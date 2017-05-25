@@ -1,3 +1,15 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 .dice {
   background-color: #cc0033;
   width: 88px;
@@ -68,7 +80,6 @@
 }
 
 .decision {
-  box-sizing: border-box;
   padding: 0.5em;
   font-size: 2em;
   background-color: #ddd;
@@ -81,4 +92,31 @@
   border: 3px solid #ccc;
   outline: none;
   background-color: #fff;
+}
+
+.roll-it {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 3px;
+  margin-left: 0.4em;
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  background-color: #cc0033;
+  color: #fff;
+  line-height: 87px;
+  box-shadow: 4px 4px 2px rgba(20, 20, 20, 0.1);
+  cursor: pointer;
+  -webkit-transition: all 700ms;
+  -moz-transition: all 700ms;
+  -ms-transition: all 700ms;
+  -o-transition: all 700ms;
+  transition: all 700ms;
+}
+
+.roll-it:hover {
+  background-color: #be1d48;
 }
