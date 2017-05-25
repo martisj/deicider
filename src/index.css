@@ -115,8 +115,14 @@ html {
   -ms-transition: all 700ms;
   -o-transition: all 700ms;
   transition: all 700ms;
+  outline: none;
 }
 
 .roll-it:hover {
   background-color: #be1d48;
+}
+
+.roll-it:active {
+  box-shadow: none;
+  transform: rotateZ(360deg);
 }
