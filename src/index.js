@@ -33,7 +33,8 @@ class Decidr extends React.Component {
     const dice = Array(this.state.diceCount)
         .fill(null)
         .map((dice, index) => {
-          return <Die value={index} className={'eyes-' + (index + 1)} />
+          let label = 'eyes-' + (index + 1);
+          return <Die value={index} key={label} className={label} />
         });
     return (
       <div className="Decidr">
